@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dev Portfolio</title>
+        <link rel="stylesheet" href="{% static 'dev-portfolio.css' %}">
     </head>
     <body>
         <h1>Jones</h1>
@@ -14,5 +16,6 @@
           <a href="/contact" target="_top">Contact</a>
         </div>
         {% block content %}{% endblock %}
+        <footer>&copy;2024 Adrien Jones</footer>
     </body>
 </html>
