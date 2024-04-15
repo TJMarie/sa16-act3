@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Contact</h2>
+<div>
+    <form id="contact" action="ContactForm.php" method="post">
+        <h3>Send a message to Adrien</h3>
+        <fieldset>
+            <input name="name" placeholder="Name" type="text" tabindex="1"
+            required autofocus>
+        </fieldset>
+        <fieldset>
+            <input name="email" placeholder="Email Address" type="email" tabindex="2"
+            required>
+        </fieldset>
+        <fieldset>
+            <input name="subject" placeholder="Subject" type="text" tabindex="2"
+            required>
+        </fieldset>
+
+        <fieldset>
+            <textarea name="message" placeholder="Your Message" tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit">Submit</button>
+        </fieldset>
+    </form>
+</div>
+{% endblock %}
